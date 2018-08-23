@@ -17,6 +17,7 @@ d3.csv("data.csv", function(error, data) {
     var htmlString = "<div>";
     htmlString += "<div class='time'>พ.ศ. " + data[i].time + "</div>";
     htmlString += "<div class='text'>" + data[i].text + "</div>";
+    htmlString += "<div class='image-wrapper'><img src='images/" + data[i].image + "' /></div>"
     htmlString += "</div>";
     item.innerHTML = htmlString;
 

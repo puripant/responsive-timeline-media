@@ -8,7 +8,7 @@
 
 body {
   font: normal 14px 'Athiti', sans-serif;
-  color: white;
+  color: black;
   overflow-x: hidden;
   padding-bottom: 50px;
   background-color: lightgray;
@@ -317,19 +317,39 @@ h4 {
 }
 
 .logo {
+  position: relative;
   display: inline-block;
   height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
   background-size: cover;
   background-repeat:no-repeat;
   background-position: center center;
 }
+.logo a span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.datajournalism {
+  border-left: solid 2px white;
+  padding: 0 20px 0 10px;
+  font-family: sans-serif;
+}
+.chula {
+  background-image: url('logos/logo_chula.png');
+  width: 50px;
+}
 .workpoint {
-  background-image: url('images/logo_workpoint.png');
-  width: 150px;
+  background-image: url('logos/logo_workpoint_small.png');
+  width: 50px;
 }
 .boonmeelab {
-  background-image: url('images/logo_boonmeelab.png');
-  width: 200px;
+  background-image: url('logos/logo_boonmeelab_small.png');
+  width: 50px;
 }
 .float {
   position: absolute;
