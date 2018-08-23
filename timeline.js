@@ -1,5 +1,20 @@
 'use strict';
 
+const domain = ["สิ่งพิมพ์", "วิทยุ", "ภาพยนตร์", "โทรทัศน์", "ออนไลน์"];
+const range = ["#fddfdf", "#fcf7de", "#defde0", "#def3fd", "#f0defd"];
+const scale = d3.scaleOrdinal()
+  .domain(domain)
+  .range(range);
+const legend = d3.legendColor()
+  // .shape("path", d3.symbol().type(d3.symbolSquare).size(2000)())
+  .shapePadding(5)
+  .labelWrap(50)
+  .shapeWidth(50)
+  .orient("horizontal")
+  .scale(scale);
+d3.select(".legend")
+  .call(legend);
+
 d3.csv("data.csv", function(error, data) {
   var list = document.getElementsByTagName("ul")[0];
   for(var i = 0; i < data.length; i++) {
@@ -9,15 +24,14 @@ d3.csv("data.csv", function(error, data) {
       case "วิทยุ": item.className = "type2"; break;
       case "ภาพยนตร์": item.className = "type3"; break;
       case "โทรทัศน์": item.className = "type4"; break;
-      case "ภาพยนตร์": item.className = "type5"; break;
-      case "ออนไลน์": item.className = "type6"; break;
+      case "ออนไลน์": item.className = "type5"; break;
       default: break;
     }
 
     var htmlString = "<div>";
     htmlString += "<div class='time'>พ.ศ. " + data[i].time + "</div>";
     htmlString += "<div class='text'>" + data[i].text + "</div>";
-    htmlString += "<div class='image-wrapper'><img src='images/" + data[i].image + "' /></div>"
+    if (data[i].image) { htmlString += "<div class='image-wrapper'><img src='images/" + data[i].image + "' /></div>"; }
     htmlString += "</div>";
     item.innerHTML = htmlString;
 
