@@ -11,7 +11,7 @@ body {
   color: black;
   overflow-x: hidden;
   padding-bottom: 50px;
-  background-color: lightgray;
+  background-color: gainsboro;
 }
 
 a:link, a:visited, a:hover, a:active {
