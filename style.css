@@ -143,6 +143,9 @@ h4 {
   content: 'ปิดตัว';
   color: white;
 }*/
+.big-wrapper {
+  overflow-x: hidden;
+}
 .timeline ul li.last::after, .timeline ul li.last.in-view::after {
   background: white;
 }
