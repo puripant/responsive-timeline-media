@@ -1,7 +1,7 @@
 'use strict';
 
-const domain = ["สิ่งพิมพ์", "วิทยุ", "ภาพยนตร์", "โทรทัศน์", "ออนไลน์"];
-const range = ["#fddfdf", "#fcf7de", "#defde0", "#def3fd", "#f0defd"];
+const domain = ["บริบท", "สิ่งพิมพ์", "วิทยุ", "ภาพยนตร์", "โทรทัศน์", "ออนไลน์"];
+const range = ["#fddfdf", "#EFEFEF", "#fcf7de", "#defde0", "#def3fd", "#f0defd"];
 const scale = d3.scaleOrdinal()
   .domain(domain)
   .range(range);

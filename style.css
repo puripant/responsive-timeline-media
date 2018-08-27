@@ -109,7 +109,7 @@ h4 {
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #EFEFEF;
+  background: #fddfdf;
   color: #4A4A4A;
   /*box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);*/
 }
@@ -127,7 +127,7 @@ h4 {
 .timeline ul li:nth-child(odd) > div::before {
   left: -25px;
   border-width: 19px 26px 19px 0;
-  border-color: transparent #EFEFEF transparent transparent;
+  border-color: transparent #fddfdf transparent transparent;
 }
 .timeline ul li:nth-child(even) > div {
   left: -440px;
@@ -135,7 +135,7 @@ h4 {
 .timeline ul li:nth-child(even) > div::before {
   right: -25px;
   border-width: 19px 0 19px 26px;
-  border-color: transparent transparent transparent #EFEFEF;
+  border-color: transparent transparent transparent #fddfdf;
 }
 
 /* Magazine Closure Style */
@@ -150,7 +150,7 @@ h4 {
   background: white;
 }
 .timeline ul li.type1 > div {
-  background: #fddfdf;
+  background: #efefef;
 }
 .timeline ul li.type2 > div {
   background: #fcf7de;
@@ -165,7 +165,7 @@ h4 {
   background: #f0defd;
 }
 .timeline ul li.type1:nth-child(odd) > div::before {
-  border-color: transparent #fddfdf transparent transparent;
+  border-color: transparent #efefef transparent transparent;
 }
 .timeline ul li.type2:nth-child(odd) > div::before {
   border-color: transparent #fcf7de transparent transparent;
@@ -181,7 +181,7 @@ h4 {
 }
 
 .timeline ul li.type1:nth-child(even) > div::before {
-  border-color: transparent transparent transparent #fddfdf;
+  border-color: transparent transparent transparent #efefef;
 }
 .timeline ul li.type2:nth-child(even) > div::before {
   border-color: transparent transparent transparent #fcf7de;
@@ -399,10 +399,10 @@ h4 {
   .timeline ul li:nth-child(even) > div::before {
     left: -25px;
     border-width: 19px 26px 19px 0;
-    border-color: transparent #EFEFEF transparent transparent;
+    border-color: transparent #fddfdf transparent transparent;
   }
   .timeline ul li.type1:nth-child(even) > div::before {
-    border-color: transparent #fddfdf transparent transparent;
+    border-color: transparent #efefef transparent transparent;
   }
   .timeline ul li.type2:nth-child(even) > div::before {
     border-color: transparent #fcf7de transparent transparent;
