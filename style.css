@@ -278,7 +278,7 @@ h4 {
 }
 
 .timeline ul li.in-view::after {
-  f: dimgray;
+  background: dimgray;
 }
 
 .timeline ul li > div {
